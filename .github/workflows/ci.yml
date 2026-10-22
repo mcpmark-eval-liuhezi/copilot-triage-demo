@@ -1,0 +1,11 @@
+name: CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo triage demo
+        run: echo "triage demo workflow ran successfully"
